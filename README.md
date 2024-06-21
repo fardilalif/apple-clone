@@ -1,27 +1,32 @@
-# AppleClone
+# Apple Official Website Clone
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.3.
+## Introduction
 
-## Development server
+Clone Apple official website page using Angular and Tailwind CSS.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Table of Contents
 
-## Code scaffolding
+- [Installation Requirements](#installation-requirements)
+- [Installation](#installation)
+- [Demo & Result](#demo-result)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Installation Requirements
 
-## Build
+- [Node.js and npm](https://nodejs.org/)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Installation
 
-## Running unit tests
+1. Clone the repository.
+2. Install dependencies and run the application.
+   - Install angular CLI globally.
+   ```bash
+       npm install -g @angular/cli
+   ```
+   - Install dependencies and run the application.
+   ```bash
+      npm i && ng serve
+   ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Demo Result
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- [Result Link](https://drive.google.com/drive/folders/1VI-jAGFNDxaumBc7KAIipJcPHZR2A0FK?usp=drive_link)

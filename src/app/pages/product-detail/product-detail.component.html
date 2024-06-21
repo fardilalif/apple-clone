@@ -1,0 +1,255 @@
+<app-pricebar />
+
+<div class="container mt-14" *ngIf="productDetail">
+  <div class="grid grid-cols-1 md:grid-cols-2 md:items-start">
+    <!-- image -->
+    <div class="md:sticky md:top-0 z-30">
+      <div>
+        <div class="pt-11 md:hidden">
+          <h1 class="text-3xl font-semibold">{{ productDetail.title }}</h1>
+        </div>
+        <div>
+          <img
+            class="mt-5 w-3/5 md:w-3/4 mx-auto"
+            [src]="productDetail.imageSrc"
+            [alt]="productDetail.imageAlt"
+          />
+          <div class="flex items-center justify-center pt-5">
+            <button class="mb-9">
+              <a href="#" class="text-sm text-center text-blue-600"
+                >View gallery <app-plus-circle></app-plus-circle
+              ></a>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- have question section large -->
+      <div class="hidden md:block my-3">
+        <div class="flex items-center mt-3 mb-6">
+          <div class="flex-1 flex flex-col items-center justify-center">
+            <app-box-icon></app-box-icon>
+            <p class="text-sm mt-1 mb-5">Free delivery</p>
+          </div>
+          <div class="flex-1 flex flex-col items-center justify-center">
+            <app-box-return-icon></app-box-return-icon>
+            <p class="text-sm mt-1 mb-5">Free and easy returns</p>
+          </div>
+        </div>
+        <div class="text-sm text-center">
+          <p>Have questions about buying a Mac?</p>
+          <a href="#" class="text-blue-600">Chat a Mac Specialist</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail -->
+    <div class="pb-3">
+      <div>
+        <!--  spec -->
+        <div class="mb-9">
+          <div class="hidden md:block">
+            <h1 class="text-4xl font-semibold">{{ productDetail.title }}</h1>
+          </div>
+          <ul class="pt-3">
+            <li
+              class="mb-3 text-sm text-gray-700"
+              *ngFor="let spec of productDetail.specs"
+            >
+              {{ spec }}
+            </li>
+          </ul>
+        </div>
+
+        <div class="border-t pt-3 pb-7">
+          <section>
+            <h2 class="text-sm text-gray-800 font-semibold py-3">
+              Add a trade-in
+            </h2>
+            <div class="grid">
+              <span class="text-sm">{{
+                productDetail.tradeIn.description
+              }}</span>
+              <span class="pt-1">
+                <a
+                  href="{{ productDetail.tradeIn.link }}"
+                  class="text-blue-600 text-sm"
+                  >{{ productDetail.tradeIn.linkText }}
+                  <app-plus-circle></app-plus-circle
+                ></a>
+              </span>
+            </div>
+          </section>
+        </div>
+
+        <!-- chip -->
+        <div class="border-t">
+          <div class="mt-4">
+            <h3 class="text-lg text-gray-800 font-semibold">
+              Chip (Processor)
+            </h3>
+            <button class="mt-1">
+              <a href="#" class="text-blue-600 text-sm"
+                >Which chip is right for you? <app-plus-circle></app-plus-circle
+              ></a>
+            </button>
+            <div>
+              <div *ngFor="let chip of productDetail.chips">
+                <label
+                  (click)="
+                    selectedChip !== chip.value && selectChip(chip.value)
+                  "
+                  class="block mt-3 border rounded-lg p-4 cursor-pointer"
+                  [class.border-blue-800]="selectedChip === chip.value"
+                >
+                  <div>
+                    <p>{{ chip.name }}</p>
+                    @if (selectedChip !== chip.value) {
+                    <span class="text-gray-500 font-normal"
+                      >{{ getChipPriceDiff(chip.value) > 0 ? "+" : "" }}
+                      {{
+                        getChipPriceDiff(chip.value)
+                          | currency : "RM" : "symbol" : "1.2-2"
+                      }}</span
+                    >
+                    }
+                  </div>
+                </label>
+              </div>
+              <div class="pl-4 pt-5 text-lg text-gray-600">
+                Select M3 Max with 30-core GPU to add 96GB of memory. Select M3
+                Max with 40-core GPU to add 48GB, 64GB, or 128GB.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- memory -->
+        <div class="pt-4">
+          <h2 class="text-lg font-semibold">Memory</h2>
+          <button class="mt-1">
+            <a href="#" class="text-blue-600 text-sm"
+              >How much memory is right for you?
+              <app-plus-circle></app-plus-circle
+            ></a>
+          </button>
+          <div class="bg-gray-100 rounded-lg text-sm mt-3 p-4">
+            Based on your configuration, we’ve selected 36GB unified memory.
+            Please review this selection.
+          </div>
+          <div>
+            <label
+              *ngFor="let memory of productDetail.memories"
+              (click)="selectedRam !== memory.size && selectRam(memory.size)"
+              class="block mt-3 p-4 border rounded-lg cursor-pointer text-lg font-semibold text-gray-800"
+              [class.border-blue-800]="selectedRam === memory.size"
+            >
+              <div
+                class="flex flex-col md:flex-row md:items-center md:justify-between"
+              >
+                {{ memory.size }}GB unified memory @if (selectedRam !==
+                memory.size) {
+                <span class="text-gray-500 font-normal"
+                  >{{ getRamPriceDiff(memory.size) > 0 ? "+" : "" }}
+                  {{
+                    getRamPriceDiff(memory.size)
+                      | currency : "RM" : "symbol" : "1.2-2"
+                  }}</span
+                >
+                }
+              </div>
+            </label>
+          </div>
+          <div class="pl-4 pt-5 text-lg text-gray-600">
+            96GB available with M3 Max with 30-core GPU. 48GB, 64GB, or 128GB
+            available with M3 Max with 40-core GPU.
+          </div>
+        </div>
+
+        <!-- storage -->
+        <div class="mt-4">
+          <h2 class="text-lg font-semibold">Storage</h2>
+          <button class="mt-1">
+            <a href="#" class="text-blue-600 text-sm"
+              >How much storage is right for you?
+              <app-plus-circle></app-plus-circle
+            ></a>
+          </button>
+          <div>
+            <label
+              *ngFor="let storage of productDetail.storages"
+              (click)="
+                selectedStorage !== storage.size && selectStorage(storage.size)
+              "
+              class="block mt-3 p-4 border rounded-lg cursor-pointer text-lg font-semibold text-gray-800"
+              [class.border-blue-800]="selectedStorage === storage.size"
+            >
+              <div
+                class="flex flex-col md:flex-row md:items-center md:justify-between"
+              >
+                {{ storage.size }}TB SSD storage @if (selectedStorage !==
+                storage.size) {
+                <span class="text-gray-500 font-normal"
+                  >{{ getStoragePriceDiff(storage.size) > 0 ? "+" : "" }}
+                  {{
+                    getStoragePriceDiff(storage.size)
+                      | currency : "RM" : "symbol" : "1.2-2"
+                  }}</span
+                >
+                }
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <!-- keyboard language -->
+        <div class="mt-4">
+          <h2 class="text-lg font-semibold">Keyboard Language</h2>
+          <button class="mt-1">
+            <a href="#" class="text-blue-600 text-sm"
+              >Learn more <app-plus-circle></app-plus-circle
+            ></a>
+          </button>
+          <select
+            class="block w-full my-3 pl-4 py-4 pr-10 border border-gray-300 rounded-lg"
+          >
+            <option>{{ productDetail.keyboardLanguage }}</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- need a moment -->
+      <div class="mt-4 p-7 bg-gray-100 rounded-lg text-sm text-gray-700">
+        <h3 class="font-semibold mb-2">
+          {{ productDetail.saveForLater.title }}
+        </h3>
+        <p class="mb-4">{{ productDetail.saveForLater.description }}</p>
+        <button class="text-blue-600 text-sm flex items-center">
+          <app-bookmark-icon></app-bookmark-icon>
+          {{ productDetail.saveForLater.buttonText }}
+        </button>
+      </div>
+    </div>
+
+    <!-- have question section mobile -->
+    <div class="md:hidden mt-3">
+      <div class="text-sm text-center">
+        <p>Have questions about buying a Mac?</p>
+        <a href="#" class="text-blue-600">Chat a Mac Specialist</a>
+      </div>
+      <div class="mt-3 mb-6">
+        <div class="flex flex-col items-center justify-center">
+          <app-box-icon></app-box-icon>
+          <p class="text-sm mt-1 mb-5">Free delivery</p>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <app-box-return-icon></app-box-return-icon>
+          <p class="text-sm mt-1 mb-5">Free and easy returns</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- billboard -->
+<app-billboard></app-billboard>

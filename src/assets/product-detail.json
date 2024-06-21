@@ -1,0 +1,85 @@
+{
+  "basePrice": 14799,
+  "chipPrices": {
+    "chip1": 0,
+    "chip2": 1200
+  },
+  "ramPrices": {
+    "36": 0,
+    "48": 800,
+    "64": 1600,
+    "96": 3200,
+    "128": 4800
+  },
+  "storagePrices": {
+    "1": 0,
+    "2": 1600,
+    "4": 4000,
+    "8": 8800
+  },
+  "title": "Customise your 14‑inch MacBook Pro - Space Black",
+  "imageSrc": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mbp-14-m3-max-pro-spaceblack-cto-hero-202310?wid=772&hei=466&fmt=jpeg&qlt=90&.v=1697913381727",
+  "imageAlt": "MacBook Pro",
+  "galleryLink": "#",
+  "specs": [
+    "Apple M3 Max chip with 14‑core CPU, 30‑core GPU and 16‑core Neural Engine",
+    "36GB unified memory",
+    "1TB SSD storage",
+    "14-inch Liquid Retina XDR display²",
+    "96W USB-C Power Adapter",
+    "Three Thunderbolt 4 ports, HDMI port, SDXC card slot, headphone jack, MagSafe 3 port",
+    "Backlit Magic Keyboard with Touch ID - US English"
+  ],
+  "tradeIn": {
+    "description": "Get credit towards a new Mac when you trade in your eligible computer. Or recycle it for free.**",
+    "linkText": "Get started",
+    "link": "#"
+  },
+  "chips": [
+    {
+      "name": "Apple M3 Max chip with 14-core CPU, 30-core GPU and 16-core Neural Engine",
+      "value": "chip1"
+    },
+    {
+      "name": "Apple M3 Max chip with 16-core CPU, 40-core GPU and 16-core Neural Engine",
+      "value": "chip2"
+    }
+  ],
+  "memories": [
+    {
+      "size": 36
+    },
+    {
+      "size": 48
+    },
+    {
+      "size": 64
+    },
+    {
+      "size": 96
+    },
+    {
+      "size": 128
+    }
+  ],
+  "storages": [
+    {
+      "size": 1
+    },
+    {
+      "size": 2
+    },
+    {
+      "size": 4
+    },
+    {
+      "size": 8
+    }
+  ],
+  "keyboardLanguage": "Backlit Magic Keyboard with Touch ID - US English",
+  "saveForLater": {
+    "title": "Need a moment?",
+    "description": "Keep all your selections by saving this device to Your Saves, then come back anytime and pick up right where you left off.",
+    "buttonText": "Save for later"
+  }
+}

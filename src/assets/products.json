@@ -1,0 +1,250 @@
+[
+  {
+    "images": {
+      "space-grey": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mbp14-spacegray-select-202310?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1697230830200",
+      "silver": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mbp14-silver-select-202310?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1697230830269"
+    },
+    "descriptions": {
+      "space-grey": "Space Grey",
+      "silver": "Silver"
+    },
+
+    "general_specs": [
+      "8-core CPU",
+      "10-core GPU",
+      "8GB Unified Memory",
+      "512GB SSD Storage¹"
+    ],
+    "detail_specs": [
+      "14-inch Liquid Retina XDR display²",
+      "Two Thunderbolt / USB 4 ports, HDMI port, SDXC card slot, headphone jack, MagSafe 3 port",
+      "Magic Keyboard with Touch ID",
+      "Force Touch trackpad",
+      "70W USB-C Power Adapter"
+    ],
+    "price": "RM 7,499.00",
+    "installment": "RM 312.46/mo. for 24 mo.",
+    "tradeIn": {
+      "title": "Add a trade-in",
+      "description": "Get credit towards a new Mac when you trade in your eligible computer. Or recycle it for free.**"
+    },
+    "delivery": {
+      "status": "In Stock",
+      "shipping": "Free Shipping",
+      "datesLink": "Get delivery dates +",
+      "pickup": {
+        "message": "Order today. Delivers to",
+        "zipcode": "55188",
+        "dateRange": "28/06/2024 - 02/07/2024",
+        "cost": "Free",
+        "pickupMessage": "Pickup:",
+        "pickupAvailability": "Apple Store Pickup is currently unavailable"
+      }
+    }
+  },
+  {
+    "images": {
+      "space-grey": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mbp14-spacegray-select-202310?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1697230830200",
+      "silver": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mbp14-silver-select-202310?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1697230830269"
+    },
+    "descriptions": {
+      "space-grey": "Space Grey",
+      "silver": "Silver"
+    },
+    "general_specs": [
+      "8-core CPU",
+      "10-core GPU",
+      "8GB Unified Memory",
+      "1TB SSD Storage¹"
+    ],
+    "detail_specs": [
+      "14-inch Liquid Retina XDR display²",
+      "Two Thunderbolt / USB 4 ports, HDMI port, SDXC card slot, headphone jack, MagSafe 3 port",
+      "Magic Keyboard with Touch ID",
+      "Force Touch trackpad",
+      "70W USB-C Power Adapter"
+    ],
+    "price": "RM 8,299.00",
+    "installment": "RM 345.79/mo. for 24 mo.",
+    "tradeIn": {
+      "title": "Add a trade-in",
+      "description": "Get credit towards a new Mac when you trade in your eligible computer. Or recycle it for free.**"
+    },
+    "delivery": {
+      "status": "In Stock",
+      "shipping": "Free Shipping",
+      "datesLink": "Get delivery dates +",
+      "pickup": {
+        "message": "Order today. Delivers to",
+        "zipcode": "55188",
+        "dateRange": "Tue 25/06/2024 — Free",
+        "pickupMessage": "Pickup:",
+        "pickupAvailability": "Apple Store Pickup is currently unavailable"
+      }
+    }
+  },
+  {
+    "images": {
+      "space-grey": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mbp14-spacegray-select-202310?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1697230830200",
+      "silver": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mbp14-silver-select-202310?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1697230830269"
+    },
+    "descriptions": {
+      "space-grey": "Space Grey",
+      "silver": "Silver"
+    },
+    "general_specs": [
+      "8-core CPU",
+      "10-core GPU",
+      "16GB Unified Memory",
+      "1TB SSD Storage¹"
+    ],
+    "detail_specs": [
+      "14-inch Liquid Retina XDR display²",
+      "Two Thunderbolt / USB 4 ports, HDMI port, SDXC card slot, headphone jack, MagSafe 3 port",
+      "Magic Keyboard with Touch ID",
+      "Force Touch trackpad",
+      "70W USB-C Power Adapter"
+    ],
+    "price": "RM 9,099.00",
+    "installment": "RM 379.13/mo. for 24 mo.",
+    "tradeIn": {
+      "title": "Add a trade-in",
+      "description": "Get credit towards a new Mac when you trade in your eligible computer. Or recycle it for free.**"
+    },
+    "delivery": {
+      "status": "In Stock",
+      "shipping": "Free Shipping",
+      "datesLink": "Get delivery dates +",
+      "pickup": {
+        "message": "Order today. Delivers to",
+        "zipcode": "55188",
+        "dateRange": "Tue 25/06/2024 — Free",
+        "pickupMessage": "Pickup:",
+        "pickupAvailability": "Apple Store Pickup is currently unavailable"
+      }
+    }
+  },
+  {
+    "images": {
+      "space-grey": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mbp14-spacegray-select-202310?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1697230830200",
+      "silver": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mbp14-silver-select-202310?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1697230830269"
+    },
+    "descriptions": {
+      "space-grey": "Space Grey",
+      "silver": "Silver"
+    },
+    "general_specs": [
+      "11-core CPU",
+      "14-core GPU",
+      "18GB Unified Memory",
+      "512GB SSD Storage¹"
+    ],
+    "detail_specs": [
+      "14-inch Liquid Retina XDR display²",
+      "Three Thunderbolt 4 ports, HDMI port, SDXC card slot, headphone jack, MagSafe 3 port",
+      "Magic Keyboard with Touch ID",
+      "Force Touch trackpad",
+      "70W USB-C Power Adapter"
+    ],
+    "price": "RM 9,999.00",
+    "installment": "RM 416.63/mo. for 24 mo.",
+    "tradeIn": {
+      "title": "Add a trade-in",
+      "description": "Get credit towards a new Mac when you trade in your eligible computer. Or recycle it for free.**"
+    },
+    "delivery": {
+      "status": "In Stock",
+      "shipping": "Free Shipping",
+      "datesLink": "Get delivery dates +",
+      "pickup": {
+        "message": "Order today. Delivers to",
+        "zipcode": "55188",
+        "dateRange": "Tue 25/06/2024 — Free",
+        "pickupMessage": "Pickup:",
+        "pickupAvailability": "Apple Store Pickup is currently unavailable"
+      }
+    }
+  },
+  {
+    "images": {
+      "space-grey": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mbp14-spacegray-select-202310?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1697230830200",
+      "silver": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mbp14-silver-select-202310?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1697230830269"
+    },
+    "descriptions": {
+      "space-grey": "Space Grey",
+      "silver": "Silver"
+    },
+    "general_specs": [
+      "12-core CPU",
+      "18-core GPU",
+      "18GB Unified Memory",
+      "1TB SSD Storage¹"
+    ],
+    "detail_specs": [
+      "14-inch Liquid Retina XDR display²",
+      "Three Thunderbolt 4 ports, HDMI port, SDXC card slot, headphone jack, MagSafe 3 port",
+      "Magic Keyboard with Touch ID",
+      "Force Touch trackpad",
+      "96W USB-C Power Adapter"
+    ],
+    "price": "RM 11,599.00",
+    "installment": "RM 483.29/mo. for 24 mo.",
+    "tradeIn": {
+      "title": "Add a trade-in",
+      "description": "Get credit towards a new Mac when you trade in your eligible computer. Or recycle it for free.**"
+    },
+    "delivery": {
+      "status": "In Stock",
+      "shipping": "Free Shipping",
+      "datesLink": "Get delivery dates +",
+      "pickup": {
+        "message": "Order today. Delivers to",
+        "zipcode": "55188",
+        "dateRange": "Tue 25/06/2024 — Free",
+        "pickupMessage": "Pickup:",
+        "pickupAvailability": "Apple Store Pickup is currently unavailable"
+      }
+    }
+  },
+  {
+    "images": {
+      "space-grey": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mbp14-spacegray-select-202310?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1697230830200",
+      "silver": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mbp14-silver-select-202310?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1697230830269"
+    },
+    "descriptions": {
+      "space-grey": "Space Grey",
+      "silver": "Silver"
+    },
+    "general_specs": [
+      "14-core CPU",
+      "30-core GPU",
+      "36GB Unified Memory",
+      "1TB SSD Storage¹"
+    ],
+    "detail_specs": [
+      "14-inch Liquid Retina XDR display²",
+      "Three Thunderbolt 4 ports, HDMI port, SDXC card slot, headphone jack, MagSafe 3 port",
+      "Magic Keyboard with Touch ID",
+      "Force Touch trackpad",
+      "96W USB-C Power Adapter"
+    ],
+    "price": "RM 14,799.00",
+    "installment": "RM 616.63/mo. for 24 mo.",
+    "tradeIn": {
+      "title": "Add a trade-in",
+      "description": "Get credit towards a new Mac when you trade in your eligible computer. Or recycle it for free.**"
+    },
+    "delivery": {
+      "status": "In Stock",
+      "shipping": "Free Shipping",
+      "datesLink": "Get delivery dates +",
+      "pickup": {
+        "message": "Order today. Delivers to",
+        "zipcode": "55188",
+        "dateRange": "Tue 25/06/2024 — Free",
+        "pickupMessage": "Pickup:",
+        "pickupAvailability": "Apple Store Pickup is currently unavailable"
+      }
+    }
+  }
+]
