@@ -1,9 +1,13 @@
 <div class="rounded-3xl bg-gray-100 flex flex-col px-4 pb-5">
-  <img
-    *ngIf="selectedColor === 'space-grey'"
-    [src]="product().images['space-grey']"
-  />
-  <img *ngIf="selectedColor === 'silver'" [src]="product().images['silver']" />
+  <div class="min-h-[310px] transition-transform duration-200">
+    <img
+      [src]="
+        selectedColor === 'space-grey'
+          ? product().images['space-grey']
+          : product().images['silver']
+      "
+    />
+  </div>
 
   <!-- selected color -->
   <div class="text-left">
@@ -15,24 +19,34 @@
     </span>
     <div class="flex items-center space-x-2">
       <div
-        class="p-1 border-2 rounded-full cursor-pointer"
-        [ngClass]="{
-          'border-blue-500': selectedColor === 'space-grey',
-          'border-gray-300': selectedColor !== 'space-grey'
-        }"
-        (click)="selectColor('space-grey')"
+        [tabIndex]="0"
+        class="p-[1px] border-2 rounded-full cursor-pointer focus:border-blue-500"
       >
-        <div class="w-6 h-6 bg-gray-700 rounded-full"></div>
+        <div
+          class="p-[2px] border-2 rounded-full cursor-pointer"
+          [ngClass]="{
+            'border-blue-500': selectedColor === 'space-grey',
+            'border-none': selectedColor !== 'space-grey'
+          }"
+          (click)="selectColor('space-grey')"
+        >
+          <div class="w-6 h-6 bg-gray-700 rounded-full"></div>
+        </div>
       </div>
       <div
-        class="p-1 border-2 rounded-full cursor-pointer"
-        [ngClass]="{
-          'border-blue-500': selectedColor === 'silver',
-          'border-gray-300': selectedColor !== 'silver'
-        }"
-        (click)="selectColor('silver')"
+        [tabIndex]="0"
+        class="p-[1px] border-2 rounded-full cursor-pointer focus:border-blue-500"
       >
-        <div class="w-6 h-6 bg-gray-300 rounded-full"></div>
+        <div
+          class="p-[2px] border-2 rounded-full cursor-pointer"
+          [ngClass]="{
+            'border-blue-500': selectedColor === 'silver',
+            'border-none': selectedColor !== 'silver'
+          }"
+          (click)="selectColor('silver')"
+        >
+          <div class="w-6 h-6 bg-gray-300 rounded-full"></div>
+        </div>
       </div>
     </div>
   </div>
